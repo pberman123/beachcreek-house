@@ -1,0 +1,11 @@
+---
+applications:
+- name: beachcreek-house-boot-test1
+  memory: 1G
+  instances: 1
+  random-route: true
+  path: target/beachcreek-house-boot-0.0.1-SNAPSHOT.jar
+#  buildpack: java_buildpack
+  services: []
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
