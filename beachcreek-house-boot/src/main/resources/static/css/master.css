@@ -1,0 +1,45 @@
+	body { background:#adc4cd !important; } <!-- Adding !important forces the browser to 	overwrite the default style applied by Bootstrap  -->
+
+	.navbar {
+	  background-color: #e1e1e1;
+	}
+	
+	nav li:hover {
+	  background-color: #a9a9a9;
+	}
+	body{
+		padding-top: 40px;
+	}
+
+	.jumbotron {
+	    margin-bottom: 0px;
+		background: url("webbeach.jpg") no-repeat center center;
+	    background-position: 0% 25%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	}
+	.item{
+	    text-align: center;
+	    width: auto;
+	}
+
+	.bs-example{
+	    margin: 10px;
+	}
+
+	.slider-size {
+	height: 300px; <!-- This is your slider height -->
+
+	}
+	.carousel {
+	width:90%;
+	margin:0 auto; <!-- center your carousel if other than 100% -->
+	}
+	carousel-inner img {
+	  margin: auto;
+	}
+	
+	.glyphicon {
+	    font-size: 30px;
+	}
