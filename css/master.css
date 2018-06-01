@@ -1,5 +1,12 @@
 	body { background:#adc4cd !important; } <!-- Adding !important forces the browser to 	overwrite the default style applied by Bootstrap  -->
 
+	.navbar {
+	  background-color: #e1e1e1;
+	}
+	
+	nav li:hover {
+	  background-color: #a9a9a9;
+	}
 	body{
 		padding-top: 40px;
 	}
@@ -31,4 +38,8 @@
 	}
 	carousel-inner img {
 	  margin: auto;
+	}
+	
+	.glyphicon {
+	    font-size: 30px;
 	}
