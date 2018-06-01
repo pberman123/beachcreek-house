@@ -1,6 +1,6 @@
 ---
 applications:
-- name: beachcreek-house-boot-test1
+- name: beachcreek-house-boot-test2
   memory: 1G
   instances: 1
   random-route: true
