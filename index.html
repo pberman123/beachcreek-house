@@ -12,8 +12,7 @@
 	
 	<!-- Optional css theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">	
-	
-	<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen">
+
 
 
 </head>
@@ -34,7 +33,7 @@
 	
 	.jumbotron {
 	    margin-bottom: 0px;
-		background: url("webbeach.jpg") no-repeat center center;
+		background: url("img/webbeach.jpg") no-repeat center center;
 	    background-position: 0% 25%;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -54,8 +53,8 @@
 
 	}
 	.carousel {
-	width:90%;
-	margin:0 auto; <!-- center your carousel if other than 100% -->
+		width:90%;
+		margin:0 auto; <!-- center your carousel if other than 100% -->
 	}
 	carousel-inner img {
 	  margin: auto;
@@ -102,7 +101,7 @@
   	<div class="jumbotron" >
   		<div class="container text-center">
   			<h1>Beachcreek House</h1>
-  			<p>Your Summer Paradise Is 90 Minutes From Chicago </p>
+  			<p><i><strong>Your Summer Paradise Is 90 Minutes From Chicago</strong></i></p>
   		</div><!-- End container -->
   	</div><!-- End jumbotron-->
 
@@ -391,7 +390,7 @@ January 06, 2017 - VRBO
 	              <div class="form-group">
 	                <label for="user-email" class="col-lg-2 control-label">Email</label>
 	                <div class="col-lg-10">
-	                  <input type="text" class="form-control" id="user-email" placeholder="Enter Your Email Address" required>
+	                  <input type="email" class="form-control" id="user-email" placeholder="Enter Your Email Address" required>
 	                </div>
 	              </div><!-- End form group -->
 	              
@@ -414,7 +413,18 @@ January 06, 2017 - VRBO
 	    </section>
 	  </div>
 	  
+<!--php script for emailing data from form -->
+	  <!-- Note : Mail function works only on a web server that supports mail sending functionality. It’s not working on localhost.
 
+	  Most of the new host company has stopped PHP (mail) functioning, because using this spammer can send a thousand of emails. If your host not enabled with PHP mail function you can send using PHP Mailer Class
+
+	  Many PHP developers utilize email in their code. The only PHP function that supports this is the mail() function. However, it does not provide any assistance for making use of popular features such as HTML-based emails and attachments.
+
+	  Formatting email correctly is surprisingly difficult. There are myriad overlapping RFCs, requiring tight adherence to horribly complicated formatting and encoding rules - the vast majority of code that you'll find online that uses the mail() function directly is just plain wrong! Please don't be tempted to do it yourself - if you don't use PHPMailer, there are many other excellent libraries that you should look at before rolling your own - try SwiftMailer, Zend/Mail, eZcomponents etc.
+
+	  The PHP mail() function usually sends via a local mail server, typically fronted by a sendmail binary on Linux, BSD and OS X platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP implementation allows email sending on Windows platforms without a local mail server. see https://github.com/PHPMailer/PHPMailer-->
+	  
+	  
 
 	<!-- Footer -->
 
