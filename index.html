@@ -63,6 +63,10 @@
 	.glyphicon {
 	    font-size: 30px;
 	}
+	
+	/*.panel-body {
+		background-color:#ecd3b3;
+	}*/
 	</style>
 
 <body data-spy="scroll" data-target="#my-navbar">
@@ -208,6 +212,66 @@
   					<span class="glyphicon glyphicon-chevron-right"></span>
   				</a>
   			</div><!-- End Carousel -->
+			
+			<!-- About the property-->			
+						<div class="container">
+						  		<section>
+						  			<div class="page-header" id="property">
+						  				<h2>About The Property</h2>
+						  			</div>
+						
+			  			<div class="row">
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-home"></span>
+			  							<h4></h4>
+			  							<p>House 1600 sqft<br>
+										   Bathrooms 2<br>
+										   Half Baths 0<br>
+									   </p>
+			  						</div>
+			  					</div>
+			  				</div>
+
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-bed"></span>
+			  							<h4></h4>
+			  							<p>Bedrooms 3<br>
+											Sleeps 8<br>
+											Min Stay 5-7 nights<br>
+										</p>
+			  						</div>
+			  					</div>
+			  				</div>
+
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-sunglasses"></span>
+			  							<h4></h4>
+			  							<p>
+											Great deck to hangout , grill, <br>
+											and enjoy the forest<br>
+											Golfcart Available<br>
+										</p>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div><!-- end row -->
+
+					</section>
+			
+				  	<!-- <div class="container">
+				  		<section>
+				  			<div class="page-header" id="feedback">
+				  				<h2></h2>
+				  			</div> -->
+				  					<blockquote>
+				  						<p>Less than 5 minutes walk from the beach, this newly furnished single-family home is located on 2 secluded wooded acres with a spring-fed creek running alongside. Association beach has two access points, one with only 5 stairs for easy access. Located in Michigan Shores, tucked away behind the trees of Grand Beach, and next to Michiana beaches, this home provides privacy in a natural setting with abundant wildlife.
+				</p>
 
 		</section>
 	</div>
@@ -293,56 +357,7 @@ January 06, 2017 - VRBO
 					  		</section>
 					  	</div><!--End Container-->
 						
-<!-- About the property-->			
-			<div class="container">
-			  		<section>
-			  			<div class="page-header" id="property">
-			  				<h2>About The Property</h2>
-			  			</div>
-						
-  			<div class="row">
-  				<div class="col-sm-4">
-  					<div class="panel panel-default text-center">
-  						<div class="panel-body">
-  							<span class="glyphicon glyphicon-home"></span>
-  							<h4></h4>
-  							<p>House 1600 sqft<br>
-							   Bathrooms 2<br>
-							   Half Baths 0<br>
-						   </p>
-  						</div>
-  					</div>
-  				</div>
 
-  				<div class="col-sm-4">
-  					<div class="panel panel-default text-center">
-  						<div class="panel-body">
-  							<span class="glyphicon glyphicon-bed"></span>
-  							<h4></h4>
-  							<p>Bedrooms 3<br>
-								Sleeps 8<br>
-								Min Stay 5-7 nights<br>
-							</p>
-  						</div>
-  					</div>
-  				</div>
-
-  				<div class="col-sm-4">
-  					<div class="panel panel-default text-center">
-  						<div class="panel-body">
-  							<span class="glyphicon glyphicon-sunglasses"></span>
-  							<h4></h4>
-  							<p>
-								Great deck to hangout , grill, <br>
-								and enjoy the forest<br>
-								Golfcart Available<br>
-							</p>
-  						</div>
-  					</div>
-  				</div>
-  			</div><!-- end row -->
-
-		</section>
 	</div><!-- End Container -->
 	
 	
@@ -377,9 +392,9 @@ January 06, 2017 - VRBO
 				  Property # 990058</br>
 	            </address>
 	          </div>
-          <!-- HTML Form code start -->
+<!-- HTML Form code start -->
 	          <div class="col-lg-8">
-	            <form action="" class="form-horizontal">
+	            <form method = "post" action="acknowledge" class="form-horizontal">
 	              <div class="form-group">
 	                <label for="user-name" class="col-lg-2 control-label">Name</label>
 	                <div class="col-lg-10">
@@ -414,6 +429,38 @@ January 06, 2017 - VRBO
 	  </div>
 	  
 <!--php script for emailing data from form -->
+	  
+	  <?php
+	  if(isset($_POST["submit"])){
+	  // Checking For Blank Fields..
+	  if($_POST["user-name"]==""||$_POST["user-email"]==""||$_POST["sub"]==""||$_POST["msg"]==""){
+	  echo "Fill All Fields..";
+	  }else{
+	  // Check if the "Sender's Email" input field is filled out
+	  $email=$_POST['user-email'];
+	  // Sanitize E-mail Address
+	  $email =filter_var($email, FILTER_SANITIZE_EMAIL);
+	  // Validate E-mail Address
+	  $email= filter_var($email, FILTER_VALIDATE_EMAIL);
+	  if (!$email){
+	  echo "Invalid Sender's Email";
+	  }
+	  else{
+	  $message = $_POST['user-message'];
+	  $headers = 'From:'. $email2 . "rn"; // Sender's Email
+	  $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+	  // Message lines should not exceed 70 characters (PHP rule), so wrap it
+	  $message = wordwrap($user-message, 70);
+	  // Send Mail By PHP Mail Function
+	  mail("muhammadsalahuddin@me.com", $user-message, $headers);
+	  echo "Your mail has been sent successfuly ! Thank you for your feedback";
+	  }
+	  }
+	  }
+	  ?>
+	  
+	  
+	  
 	  <!-- Note : Mail function works only on a web server that supports mail sending functionality. It’s not working on localhost.
 
 	  Most of the new host company has stopped PHP (mail) functioning, because using this spammer can send a thousand of emails. If your host not enabled with PHP mail function you can send using PHP Mailer Class
@@ -422,7 +469,8 @@ January 06, 2017 - VRBO
 
 	  Formatting email correctly is surprisingly difficult. There are myriad overlapping RFCs, requiring tight adherence to horribly complicated formatting and encoding rules - the vast majority of code that you'll find online that uses the mail() function directly is just plain wrong! Please don't be tempted to do it yourself - if you don't use PHPMailer, there are many other excellent libraries that you should look at before rolling your own - try SwiftMailer, Zend/Mail, eZcomponents etc.
 
-	  The PHP mail() function usually sends via a local mail server, typically fronted by a sendmail binary on Linux, BSD and OS X platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP implementation allows email sending on Windows platforms without a local mail server. see https://github.com/PHPMailer/PHPMailer-->
+	  The PHP mail() function usually sends via a local mail server, typically fronted by a sendmail binary on Linux, BSD and OS X platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP implementation allows email sending on Windows platforms without a local mail server. see https://github.com/PHPMailer/PHPMailer
+		  -->
 	  
 	  
 
