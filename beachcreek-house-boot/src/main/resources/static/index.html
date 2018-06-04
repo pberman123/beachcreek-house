@@ -95,6 +95,28 @@
 	.panel-body {
 		background-color:#adc4cd;
 	}
+	a .readMore {
+    display: none;
+	}
+
+	a .readLess {
+    display: inline;
+	}
+
+	a.collapsed .readMore {
+    display: inline;
+	}
+
+	a.collapsed .readLess {
+    display: none;
+	}
+
+	.descriptionText:not(.in) {
+    min-height: 4.25em;
+    height: 4.25em;
+    display: block;
+    overflow: hidden;
+	}
 	</style>
 
 <body data-spy="scroll" data-target="#my-navbar">
@@ -313,26 +335,43 @@
 	  			<div class="row">
 	  				<div class="col-md-4">
 	  					<blockquote>
-	  						<p>We loved our stay at the BeachCreek House! It was a clean home with comfortable beds, quality towels and wonderful amenities. We loved the floor to ceiling windows overlooking the surrounding woods and nature. The hammock was very relaxing on the back deck. The owners were amazing....
+	  						<div id="descriptionContent" class="collapse descriptionText">
+<p>We loved our stay at the BeachCreek House! It was a clean home with comfortable beds, quality towels and wonderful amenities. We loved the floor to ceiling windows overlooking the surrounding woods and nature. The hammock was very relaxing on the back deck. The owners were amazing....
 	I have stayed at this home a few times and because of the location it feels very private. There is a creek that runs in the back of the property and it's great to see the wildlife. I would recommend this house to all my friends.<br>
 Jul 07, 2017 - VRBO
 	</p>
-  						
+  		</div>
+  		<a href="#descriptionContent" data-toggle="collapse" class="collapsed">
+                <span class="text-danger readMore">(read more)</span>
+                <span class="text-danger readLess">(read less)</span>
+            </a>				
 	  					</blockquote>
 	  				</div>
 	  				<div class="col-lg-4">
 	  					<blockquote>
+	  						<div id="descriptionContent" class="collapse descriptionText">
 	  						<p>Our family looks forward to this trip more than any we take all year. We love this house and feel so comfortable and welcomed there. We can not say enough, but want to thank the owners and give them our highest referral. Counting down the months to summer already.<br>
 Aril 14, 2017 - VRBO			
 		</p>
+							</div>
+							<a href="#descriptionContent" data-toggle="collapse" class="collapsed">
+                				<span class="text-danger readMore">(read more)</span>
+                				<span class="text-danger readLess">(read less)</span>
+            				</a>
   						
 	  					</blockquote>
 	  				</div>
 	  				<div class="col-lg-4">
 	  					<blockquote>
+	  						<div id="descriptionContent" class="collapse descriptionText">
 	  						<p>We have stayed at this home for extended time frames through July for the last two years and are looking forward to returning again this coming summer. We have rented in the area for 13 years. We love the privacy this particular home offers. It is tucked down in the woods on the creek as pictures show and we feel very peaceful and private there. I could go on and on about how great this house is, but will try to stick to things that draw us back each year. The owners are very nice to deal with and very accessible.<br>
 January 06, 2017 - VRBO
 							</p>
+							</div>
+							<a href="#descriptionContent" data-toggle="collapse" class="collapsed">
+                				<span class="text-danger readMore">(read more)</span>
+                				<span class="text-danger readLess">(read less)</span>
+            				</a>
 	  					</blockquote>
 	  				</div>
 	  			</div><!-- End row -->
