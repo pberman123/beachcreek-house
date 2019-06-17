@@ -1,24 +1,449 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<!DOCTYPE html>
+<html lang="en">
 
-  
-  <link type="text/css" rel="stylesheet" href="css/main.css">
-  <title>The Awesome Beachcreek House</title>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>Still a Great Beach ! Paradise 90 minutes from Downtown Chicago</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Great Beach ! Paradise 90 minutes from Chicago. BEACHCREEK HOUSE Paradise 90 minutes from Downtown Chicago !Great deck to hangout , grill, and enjoy the for...">
+	<!-- Latest Bootstrap compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- Optional css theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">	
+	<link rel="stylesheet" type="text/css" href=""http://fonts.googleapis.com/css?family=Great+Vibes>
+</head>
+	<style type="text/css">    	
+	body { background:#adc4cd !important; } <!-- Adding !important forces the browser to 	overwrite the default style applied by Bootstrap  -->
+	.navbar {
+	  background-color: #e1e1e1;
+	}
+	
+	/*nav li:hover {
+	  background-color: #a9a9a9;
+	}btn*/
+	
+	body{
+		padding-top: 40px;
+	}
+	html {
+		line-height: 1.6;
+	}
 
-  
-</head><body>
-<h1>Beachcreek House</h1>
+	h1, h2, h3, h4, h5 {
+		line-height: 1.2;
+	}
+	.jumbotron {
+	    margin-bottom: 0px;
+		background: url("img/webbeach.jpg") no-repeat center center;
+	    background-position: 0% 25%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color:#f7f7f1;
+	    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	}
+	.item{
+	    text-align: center;
+	    width: auto;
+	}
 
-<h3>Paradise 90 minutes from Chicago</h3>
+	#subtitle {
+		font-weight:700;
+		font-style:italic;
+	}
 
-<div class="center">
-<a href="https://www.vrbo.com/990058" target="_blank">VRBO Listing</a>
-<br>
-<a href="https://www.vrbo.com/990058" target="_blank"><img alt="BeautifulCreeksideSetting" src="img/BC-outside1.jpg" style="width: 512px; height: 386px;"></a>
-<br>
-<br>
-</div>
+	.bs-example{
+	    margin: 10px;
+	}
 
-</body></html>
+	.navbar-toggle {
+		background-color: #a9a9a9;
+	}
+
+	.slider-size {
+	height: 300px; <!-- This is your slider height -->
+	}
+
+	.carousel {
+		width:90%;
+		margin:0 auto; <!-- center your carousel if other than 100% -->
+	}
+	
+	carousel-inner img {
+	  margin: auto;
+	}
+	
+	.panel {
+		box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  		transition: all .3s ease;
+  		posibox-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  		transition: all .3s ease;
+  		position: relative;tion: relative;
+	}
+
+	.glyphicon {
+	    font-size: 30px;
+	}
+	
+	.panel-body {
+		background-color:#adc4cd;
+	}
+	
+
+	
+
+	.footer{
+		min-height: 4.25em;
+    	height: 4.25em;
+    	display: block;
+    	overflow: hidden;
+
+	}
+	</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+  <!-- Navbar -->
+  	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+
+  				<a href="" class="navbar-brand">Beachcreek House</a>
+  			</div><!-- Navbar Header-->
+  			<div class="collapse navbar-collapse" id="navbar-collapse">
+  				
+  			<a href="https://www.vrbo.com/990058" class="btn 	btn-warning navbar-btn navbar-right" 
+			>Request to Book</a>
+  				<ul class="nav navbar-nav">
+  					<li><a href="#feedback">Feedback</a> 
+  					<li><a href="#gallery">Gallery</a> 
+  					<li><a href="#amenities">Amenities</a>
+					<li><a href="#property">About the property</a> 
+					<li><a href="#map">Map</a>
+					<li><a href="#contact">Contact us</a>
+					
+  				</ul>
+  			</div>
+  		</div><!-- End Container-->
+  	</nav><!-- End navbar -->
+
+  	<!-- jumbotron-->
+  	<div class="jumbotron container" >
+  		<div class="text-center">
+  			<h1>Beachcreek House</h1>
+  			<p id="subtitle"><i><strong>Your Summer Paradise Is 90 Minutes From Chicago</strong></i></p>
+  		</div><!-- End container -->
+  	</div>
+  	<!-- End jumbotron-->
+
+<!-- Gallery -->
+	<div class="container">
+		<section>                                   		 
+			<div class="page-header" id="gallery">
+  				<h2>Gallery</small></h2>
+  			</div>		
+  			<div class="carousel slide" id="screenshot-carousel" data-ride="carousel" >
+  				<ol class="carousel-indicators">
+  					<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+  					<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+  					<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+  					<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="4"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="5"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="6"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="7"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="8"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="9"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="10"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="11"></li>
+					</ol>
+					<!--wrapper for slides -->
+  				<div class="carousel-inner">
+  					<div class="item active">
+  						<img src="img/outside1.jpg" alt="outside1">
+  						<div class="carousel-caption">
+							<h3>Outside</h3>
+  						</div>
+  					</div>
+  					<div class="item">
+  						<img src="img/outside2.jpg" alt="outside2">
+  						<div class="carousel-caption">
+  							<h3>Outside</h3>
+  						</div>
+  					</div>
+  					<div class="item">
+  						<img src="img/livingrm1.jpg" alt="Living Room">
+  						<div class="carousel-caption">
+  							<h3>Living Room</h3>
+  						</div>
+  					</div>
+  					<div class="item">
+  						<img src="img/livingrm2.jpg" alt="Living Room">
+  						<div class="carousel-caption">
+  							<h3>Living Room</h3>
+  						</div>
+  					</div>
+					  <div class="item">
+					  	<img src="img/deck2.jpg" alt="Deck">
+					  	<div class="carousel-caption">
+					  		<h3>Deck</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/br1.jpg" alt="Bedroom">
+					  	<div class="carousel-caption">
+					  		<h3>Bedroom</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/br2.jpg" alt="Bedroom">
+					  	<div class="carousel-caption">
+					  		<h3>Bedroom</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/br3.jpg" alt="Bedroom">
+					  	<div class="carousel-caption">
+					  		<h3>Bedroom</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/kitchen.jpg" alt="Kitchen">
+					  	<div class="carousel-caption">
+					  		<h3>Kitchen</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/sunsetbeach.jpg" alt="Sunset Beach">
+					  	<div class="carousel-caption">
+					  		<h3>Beach</h3>
+					  	</div>
+					 </div>
+					  <div class="item">
+					  	<img src="img/beach.jpg" alt="Beach">
+					  	<div class="carousel-caption">
+					  		<h3>Beach</h3>
+					  	</div>
+					 </div>
+					 <div class="item">
+					  	<img src="img/deer.jpg" alt="Deer">
+					  	<div class="carousel-caption">
+					  	</div>
+					 </div>
+  				</div><!-- End Carousel inner -->
+  				<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+  					<span class="glyphicon glyphicon-chevron-left"></span>
+  				</a>
+  				<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+  					<span class="glyphicon glyphicon-chevron-right"></span>
+  				</a>
+  			</div><!-- End Carousel -->
+			
+			<!-- About the property-->			
+						<div class="container">
+						  		<section>
+						  			<div class="page-header" id="property">
+						  				<h2>About The Property</h2>
+						  			</div>
+						
+			  			<div class="row">
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-home"></span>
+			  							<h4></h4>
+			  							<p>House 1600 sqft<br>
+										   Bathrooms 2<br>
+										   Half Baths 0<br>
+									   </p>
+			  						</div>
+			  					</div>
+			  				</div>
+
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-bed"></span>
+			  							<h4></h4>
+			  							<p>Bedrooms 3<br>
+											Sleeps 8<br>
+											Min Stay 5-7 nights<br>
+										</p>
+			  						</div>
+			  					</div>
+			  				</div>
+
+			  				<div class="col-sm-4">
+			  					<div class="panel panel-default text-center">
+			  						<div class="panel-body">
+			  							<span class="glyphicon glyphicon-sunglasses"></span>
+			  							<h4></h4>
+			  							<p>
+											Great deck to hangout , grill, <br>
+											and enjoy the forest<br>
+											Golfcart Available<br>
+										</p>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div><!-- end row -->
+
+					</section>
+			
+				  	<!-- <div class="container">
+				  		<section>
+				  			<div class="page-header" id="feedback">
+				  				<h2></h2>
+				  			</div> -->
+				  					<blockquote>
+				  						<p>Less than 5 minutes walk from the beach, this newly furnished single-family home is located on 2 secluded wooded acres with a spring-fed creek running alongside. Association beach has two access points, one with only 5 stairs for easy access. Located in Michigan Shores, tucked away behind the trees of Grand Beach, and next to Michiana beaches, this home provides privacy in a natural setting with abundant wildlife.
+										</p>
+
+								</section>
+							</div>
+	  <!-- Feedback-->
+	  <div class="container">
+  		<section>
+  			<div class="page-header" id="feedback">
+  				<h2>What People Are Saying</h2>
+  			</div>
+  			<div class="row">
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>We loved our stay at the BeachCreek House! It was a clean home with comfortable beds, quality towels and wonderful amenities. We loved the floor to ceiling windows overlooking the surrounding woods and nature. The hammock was very relaxing on the back deck. The owners were amazing.I have stayed at this home a few times and because of the location it feels very private. There is a creek that runs in the back of the property and it's great to see the wildlife. I would recommend this house to all my friends.<br>
+						</p>
+  						<footer>Jul 07 2017 - VRBO</footer>
+  					</blockquote>
+  				</div>
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>Our family looks forward to this trip more than any we take all year. We love this house and feel so comfortable and welcomed there. We can not say enough, but want to thank the owners and give them our highest referral. Counting down the months to summer already.</p>
+  						<footer>April 14, 2017 - VRBO</footer>
+  					</blockquote>
+  				</div>
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>We have stayed at this home for extended time frames through July for the last two years and are looking forward to returning again this coming summer. We have rented in the area for 13 years. We love the privacy this particular home offers. It is tucked down in the woods on the creek as pictures show and we feel very peaceful and private there. I could go on and on about how great this house is, but will try to stick to things that draw us back each year. The owners are very nice to deal with and very accessible.</p>
+  						<footer>January 06, 2017 - VRBO</footer>
+  					</blockquote>
+  				</div>
+  			</div><!-- End row -->
+  		</section>
+  	</div><!--End Container-->
+
+	<!-- call to action -->
+		<section>
+			<div class="well">
+				</div><!-- end Container-->
+			</div><!-- end well-->
+		</section><!-- call to action -->
+<!-- Amenities -->
+				<div class="container">
+				  		<section>
+				  			<div class="page-header" id="amenities">
+				  				<h2>Amenties</h2>
+				  			</div>
+				<div class="row">
+	  				<div class="col-md-4">
+	  					<blockquote>
+	  						<p>Internet<br>
+								Air Conditioning<br>
+								Heater<br>
+							</p>
+  					
+	  					</blockquote>
+						
+	  				</div>
+	  				<div class="col-lg-4">
+	  					<blockquote>
+	  						<p>Fireplace<br>
+								Kids Welcome<br>
+								Washer and Dryer
+								<br>
+							</p>
+  						
+	  					</blockquote>
+		  				</div>
+		  				<div class="col-lg-4">
+		  					<blockquote>
+		  						<p>TV<br>
+									No Smoking<br>
+									Parking<br>
+								</p>
+  						
+		  					</blockquote>
+					  				</div>
+					  			</div><!-- End row -->
+					  		</section>
+					  	</div>
+						
+
+	</div><!-- End Container -->
+	
+	
+
+<!-- Map -->
+	<div class ="container">
+		<!-- <section> -->
+			<div class="page-header" id="map">
+			<h2>Map and Directions</h2>
+			</div> <!-- End Page Header -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.7700869133505!2d-86.80333158410322!3d41.76861457923115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881104477653c467%3A0x675fb3792498da78!2s14378+Spring+Creek+Dr%2C+New+Buffalo%2C+MI+49117!5e0!3m2!1sen!2sus!4v1525530625772" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	
+			</div>
+		</section>
+	</div> <!--end Container-->			
+				
+<!-- Contact -->
+<footer>
+
+	  <div class="container text">
+	    <section>
+	      <div class="page-header" id="contact">
+	          <h2>Contact Us</h2>
+	        </div><!-- End Page Header -->
+
+	        <div class="row">
+	          <div class="col-lg-4">
+
+	            <address>
+	              <strong>Beachcreek House</strong></br>
+				  14378 Spring Creek Drive</br>
+				  New Buffalo Michigan 49117</br>
+				  <a href="mailto:pberman123@yahoo.com?subject=Beachcreek House" class="btn btn-info">Email Us</a><br>
+			 	  <br>
+			 	  
+				  
+				  For booking assistance, call 888-640-7927
+			  		</br>
+				  Property # 990058</br>
+	            </address>
+	          </div>
+	          <br>
+        
+
+<!-- Footer -->
+      </div><!-- End Container -->
+	  
+    </footer>
+    <div class="container text-center">
+ 		<br>
+        <p>&copy; 2018 Beachcreek House. All rights reserved. </p>
+        <br>
+        <br>
+        <br>
+        
+
+	<script
+				  src="https://code.jquery.com/jquery-3.3.1.min.js"
+				  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				  crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>	
+</html>

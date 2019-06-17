@@ -1,0 +1,99 @@
+	body { background:#adc4cd !important; } <!-- Adding !important forces the browser to 	overwrite the default style applied by Bootstrap  -->
+	.navbar {
+	  background-color: #e1e1e1;
+	}
+	
+	nav li:hover {
+	  background-color: #a9a9a9;
+	}
+	
+	body{
+		padding-top: 40px;
+	}
+	html {
+		line-height: 1.6;
+	}
+
+	h1, h2, h3, h4, h5 {
+		line-height: 1.2;
+	}
+	.jumbotron {
+	    margin-bottom: 0px;
+		background: url("img/webbeach.jpg") no-repeat center center;
+	    background-position: 0% 25%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color:#f7f7f1;
+	    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	}
+	.item{
+	    text-align: center;
+	    width: auto;
+	}
+
+	#subtitle {
+		font-weight:700;
+		font-style:italic;
+	}
+
+	.bs-example{
+	    margin: 10px;
+	}
+
+	.navbar-toggle {
+		background-color: #a9a9a9;
+
+
+	}
+
+	.slider-size {
+	height: 300px; <!-- This is your slider height -->
+	}
+
+	.carousel {
+		width:90%;
+		margin:0 auto; <!-- center your carousel if other than 100% -->
+	}
+	
+	carousel-inner img {
+	  margin: auto;
+	}
+	
+	.panel {
+		box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  		transition: all .3s ease;
+  		posibox-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  		transition: all .3s ease;
+  		position: relative;tion: relative;
+	}
+
+	.glyphicon {
+	    font-size: 30px;
+	}
+	
+	.panel-body {
+		background-color:#adc4cd;
+	}
+	
+	a .readMore {
+    display: none;
+	}
+
+	a .readLess {
+    display: inline;
+	}
+
+	a.collapsed .readMore {
+    display: inline;
+	}
+
+	a.collapsed .readLess {
+    display: none;
+	}
+
+	.descriptionText:not(.in) {
+    min-height: 4.25em;
+    height: 4.25em;
+    display: block;
+    overflow: hidden;
+	}
